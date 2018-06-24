@@ -1,0 +1,9 @@
+version: "2"
+services:
+  nginx:
+    image: richarvey/nginx-php-fpm
+    ports:
+      - 80:80
+    volumes:
+      - ./:/var/www/html
+      - ./nginx:/etc/nginx/sites-enabled/default
